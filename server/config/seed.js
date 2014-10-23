@@ -7,6 +7,7 @@
 
 var Thing = require('../api/thing/thing.model');
 var User = require('../api/user/user.model');
+var Word = require('../api/word/word.model')
 
 Thing.find({}).remove(function() {
   Thing.create({
@@ -47,3 +48,17 @@ User.find({}).remove(function() {
     }
   );
 });
+
+Word.find({}).remove(function(){
+  Word.create(
+    {word:'Word 1'},
+    {word:'Word 2'},
+    {word:'Word 3'},
+    {word:'Word 4'},
+    {word:'Word 5'},
+    {word:'Word 6'},
+    {word:'Word 7'},
+    {word:'Word 8'},
+    {word:'Word 9'}
+    )
+})
