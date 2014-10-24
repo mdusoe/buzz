@@ -7,4 +7,4 @@ var WordSchema = new Schema({
   word: String
 });
 
-module.exports = mongoose.model('tword', WordSchema);
+module.exports = mongoose.model('Word', WordSchema);
