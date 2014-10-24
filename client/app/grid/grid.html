@@ -4,15 +4,15 @@
   </div>
 </header>
 
-<div class="container">
-   <div class="card">
-        <div class="row col-md-12">
-            <div class="col-md-3 square" ng-repeat="word in words|limitTo:5">
-                <span>{{word.word}}</span>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-12 text-center"> 
-        <button type="button" class="btn btn-success center-block">New Card</button>
-    </div>
+
+<div class="square" ng-repeat="word in words|limitTo:5">
+    <div class="content">
+		<div class="table">
+			<div class="table-cell">{{word.word}}</div>
+		</div>
+	</div>
+</div>
+
+<div class="col-md-12 text-center"> 
+<button type="button" class="btn btn-large btn-success">New Card</button>
 </div>
