@@ -1,18 +1,17 @@
-<header class="hero-unit" id="banner">
-  <div class="container">
-    <h1>Buzzword Bingo</h1>
-  </div>
-</header>
-
-
-<div class="square" ng-repeat="word in words|limitTo:5">
-    <div class="content">
-		<div class="table">
-			<div class="table-cell">{{word.word}}</div>
-		</div>
-	</div>
-</div>
+<table class="card">
+    <colgroup span="5"></colgroup>
+    <tr>
+        <th scope="col">B</th>
+        <th scope="col">I</th>
+        <th scope="col">N</th>
+        <th scope="col">G</th>
+        <th scope="col">O</th>
+    </tr>
+    <tr ng-repeat="item in words|limitTo:5">
+        <td ng-repeat="word in words|limitTo:5">{{word.word}}</td>
+    </tr>
+</table>
 
 <div class="col-md-12 text-center"> 
-<button type="button" class="btn btn-large btn-success">New Card</button>
+    <button type="button" class="btn btn-xlarge btn-primary">New Card</button>
 </div>
