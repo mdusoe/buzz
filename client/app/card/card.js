@@ -3,8 +3,8 @@
 angular.module('buzzApp')
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/grid', {
-        templateUrl: 'app/grid/grid.html',
-        controller: 'GridCtrl'
+      .when('/card', {
+        templateUrl: 'app/card/card.html',
+        controller: 'CardCtrl'
       });
   });
