@@ -18,5 +18,4 @@ describe('GET /api/words', function() {
       });
   });
 
-  it('should have ')
 });

@@ -7,11 +7,12 @@
         <th scope="col">G</th>
         <th scope="col">O</th>
     </tr>
-    <tr ng-repeat="item in words|limitTo:5">
-        <td ng-repeat="word in words|limitTo:5">{{word.word}}</td>
+    <tr ng-repeat="row in game.rows">
+        <td ng-repeat="word in row.words">{{word}}</td>
     </tr>
 </table>
 
-<div class="col-md-12 text-center"> 
-    <button type="button" class="btn btn-xlarge btn-primary">New Card</button> <button type="button" class="btn btn-xlarge btn-default">Customize</button>
+<div class="col-md-12 text-center">
+    <button type="button" class="btn btn-xlarge btn-primary">New Card</button>
+    <button type="button" class="btn btn-xlarge btn-default">Customize</button>
 </div>

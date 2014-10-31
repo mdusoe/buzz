@@ -59,6 +59,28 @@ Word.find({}).remove(function(){
     {word:'Word 6'},
     {word:'Word 7'},
     {word:'Word 8'},
-    {word:'Word 9'}
+    {word:'Word 9'},
+    {word:'Word 10'},
+    {word:'Word 11'},
+    {word:'Word 12'},
+    {word:'Word 13'},
+    {word:'Word 14'},
+    {word:'Word 15'},
+    {word:'Word 16'},
+    {word:'Word 17'},
+    {word:'Word 18'},
+    {word:'Word 19'},
+    {word:'Word 20'},
+    {word:'Word 21'},
+    {word:'Word 22'},
+    {word:'Word 23'},
+    {word:'Word 24'},
+    {word:'Word 25'},
+    {word:'Word 26'},
+    {word:'Word 27'},
+    {word:'Word 28'},
+    {word:'Word 29'},
+  
+    {word:'Word 30'}
     )
-})
+});
