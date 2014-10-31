@@ -7,6 +7,7 @@
 .card th {
     background: #2fa75f;
     color: #f7f2ef;
+    font-family: 'Chango', cursive;
     font-size: 4em;
     text-align: center;
 }
@@ -19,12 +20,16 @@
     text-align: center;
     display: table-cell;
     box-sizing: border-box;
-    vertical-align: center;
     padding: 5px;
     background: #f7f2ef;
     color: #252e33;
     font-size: 1.25em;
     font-weight: 400;
+}
+.card td:hover {
+    background: #2fa75f;
+    color: #fff;
+    cursor: pointer;
 }
 .btn-xlarge {
     padding: 18px 28px;
