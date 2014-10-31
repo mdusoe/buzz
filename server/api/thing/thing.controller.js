@@ -5,6 +5,7 @@
  * GET     /things/:id          ->  show
  * PUT     /things/:id          ->  update
  * DELETE  /things/:id          ->  destroy
+ * INCINERATE /things/:id       ->  incinerate
  */
 
 'use strict';
