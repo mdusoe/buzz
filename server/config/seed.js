@@ -51,7 +51,32 @@ User.find({}).remove(function() {
 
 Word.find({}).remove(function(){
   Word.create(
-    {word:'Word 1'},
+    {word:'Efficiently'},
+    {word:'Unleash'},
+    {word:'Deliverables'},
+    {word:'Key Performance Indicator'},
+    {word:'Functional'},
+    {word:'Game-Changer'},
+    {word:'Relationships'},
+    {word:'Continuous Integration'},
+    {word:'Dynamically'},
+    {word:'Collaborate'},
+    {word:'Synergy'},
+    {word:'Agile'},
+    {word:'Innovate'},
+    {word:'Speed to Market'},
+    {word:'Seamless'},
+    {word:'Cloud'},
+    {word:'Barrier to Entry'},
+    {word:'Maintainable'},
+    {word:'Momentum'},
+    {word:'Return on Investment'},
+    {word:'Actionable'},
+    {word:'TPS Reports'},
+    {word:'Hipster'},
+    {word:'Proactive'},    
+    {word:'Cultivate'}
+    /*{word:'Word 1'},
     {word:'Word 2'},
     {word:'Word 3'},
     {word:'Word 4'},
@@ -80,7 +105,6 @@ Word.find({}).remove(function(){
     {word:'Word 27'},
     {word:'Word 28'},
     {word:'Word 29'},
-  
-    {word:'Word 30'}
+    {word:'Word 30'}*/
     )
 });

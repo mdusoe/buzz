@@ -25,6 +25,7 @@
     color: #252e33;
     font-size: 1.25em;
     font-weight: 400;
+    word-break: break-word;
 }
 .card td:hover {
     background: #2fa75f;
