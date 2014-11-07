@@ -1,11 +1,11 @@
 .card {
     margin: 0 auto 25px;
-    border: 10px solid #2fa75f;
+    border: 10px solid #45adc5;
     border-collapse: collapse;
     border-top: none;
 }
 .card th {
-    background: #2fa75f;
+    background: #45adc5;
     color: #f7f2ef;
     text-align: center;
     font-size: 4em;
@@ -18,22 +18,23 @@
     box-sizing: border-box;
     padding: 5px;
     height: 120px;
-    border: 3px solid #2fa75f;
+    border: 3px solid #45adc5;
     background: #f7f2ef;
     color: #756d66;
     text-align: center;
     word-break: break-word;
     font-weight: 700;
     font-size: 1.25em;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
     line-height: 1.1em;
 }
-.card td:hover {
-    background: #2fa75f;
+.card td:hover, .card td.selected:hover {
+    background: #f2b179;
     color: #fff;
     cursor: pointer;
 }
 .card td.selected {
-    background: #2fa75f;
+    background: #45adc5;
     color: #fff;
 }
 .btn-xlarge {
