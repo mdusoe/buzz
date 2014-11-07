@@ -1,40 +1,44 @@
 .card {
-    border-collapse: collapse;
-    border: 10px solid #2fa75f;
     margin: 0 auto 25px;
-    background: #f7f2ef;
+    border: 10px solid #2fa75f;
+    border-collapse: collapse;
+    border-top: none;
 }
 .card th {
     background: #2fa75f;
     color: #f7f2ef;
-    font-family: 'Chango', cursive;
+    text-align: center;
     font-size: 4em;
-    text-align: center;
+    font-family: 'Chango', cursive;
+    line-height: 1.5em;
 }
-.card th, .card td {
-    width: 120px;
-    height: 120px;
-}
+.card th, .card td { width: 120px }
 .card td {
-    border: 3px solid #2fa75f;
-    text-align: center;
     display: table-cell;
     box-sizing: border-box;
     padding: 5px;
+    height: 120px;
+    border: 3px solid #2fa75f;
     background: #f7f2ef;
-    color: #252e33;
-    font-size: 1.25em;
-    font-weight: 400;
+    color: #756d66;
+    text-align: center;
     word-break: break-word;
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 1.1em;
 }
 .card td:hover {
     background: #2fa75f;
     color: #fff;
     cursor: pointer;
 }
+.card td.selected {
+    background: #2fa75f;
+    color: #fff;
+}
 .btn-xlarge {
     padding: 18px 28px;
+    border-radius: 8px;
     font-size: 1.5em;
     line-height: normal;
-    border-radius: 8px;
 }

@@ -7,7 +7,7 @@
         <th>O</th>
     </tr>
     <tr ng-repeat="row in game.rows">
-        <td ng-repeat="word in row.words">{{word}}</td>
+        <td ng-repeat="word in row.words" ng-class={selected:toggle} ng-click="toggle = !toggle">{{word}}</td>
     </tr>
 </table>
 
