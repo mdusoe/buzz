@@ -37,16 +37,16 @@ exports.create = function(req, res) {
                 words: []
             };
             for (var cellCount = 0; cellCount < 5; cellCount++) {
-                if (rowCount * 5 + cellCount == 12) {
+                if (rowCount * 5 + cellCount === 12) {
                     newRow.words.push("FREE SPACE");
                 } else {
 
                     newRow.words.push(words[rowCount * 5 + cellCount].word)
                 }
 
-            };
+            }
             newGame.rows.push(newRow);
-        };
+        }
 
         Game.create(newGame, function(err, game) {
             if (err) {

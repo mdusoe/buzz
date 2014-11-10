@@ -28,12 +28,12 @@
     font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
     line-height: 1.1em;
 }
-.card td:hover, .card td.selected:hover {
+.card td:hover {
     background: #f2b179;
     color: #fff;
     cursor: pointer;
 }
-.card td.selected {
+.card td.selected, .card td.selected:hover {
     background: #45adc5;
     color: #fff;
 }
