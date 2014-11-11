@@ -1,9 +1,10 @@
-@import url(/assets/fonts/clear-sans.css);
 .card {
     margin: 0 auto 25px;
-    border: 10px solid #45adc5;
-    border-collapse: collapse;
+    border: 7px solid #45adc5;
+    border-spacing: 3px;
+    border-collapse: separate;
     border-top: none;
+    background: #45adc5;
 }
 .card th {
     background: #45adc5;
@@ -19,7 +20,6 @@
     box-sizing: border-box;
     padding: 5px;
     height: 120px;
-    border: 3px solid #45adc5;
     background: #f7f2ef;
     color: #756d66;
     text-align: center;
@@ -43,4 +43,16 @@
     border-radius: 8px;
     font-size: 1.5em;
     line-height: normal;
+}
+@media only screen and (max-width: 480px) {
+    .card th {
+        font-size: 3em;
+        line-height: 1.25em;
+    }
+    .card td {
+        height: 105px;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    .card th, .card td { width: 105px }
 }
