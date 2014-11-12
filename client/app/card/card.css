@@ -34,7 +34,7 @@
     color: #fff;
     cursor: pointer;
 }
-.card td.selected, .card td.selected:hover {
+.card td.selected, .card td.selected:hover, .card tr:nth-child(4) td:nth-child(3) {
     background: #45adc5;
     color: #fff;
 }
