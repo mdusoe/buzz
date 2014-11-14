@@ -1,4 +1,4 @@
-<table class="card">
+<table id="card" class="card">
     <tr>
         <th>B</th>
         <th>I</th>
@@ -7,11 +7,11 @@
         <th>O</th>
     </tr>
     <tr ng-repeat="row in game.rows">
-        <td id="row-{{$parent.$index+1}}-col-{{$index+1}}" ng-repeat="word in row.words" ng-class={selected:toggle} ng-click="toggle = !toggle">{{word}}</td>
+        <td ng-repeat="word in row.words" onclick="select(this);">{{word}}</td>
     </tr>
 </table>
 
 <div class="col-md-12 text-center">
-    <button type="button" class="btn btn-xlarge btn-primary">New Card</button>
+    <button type="button" class="btn btn-xlarge btn-success">New Card</button>
     <button type="button" class="btn btn-xlarge btn-default">Customize</button>
 </div>
