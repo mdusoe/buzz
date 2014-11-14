@@ -93,7 +93,7 @@ function checkForBingo() {
 function select(square) {
     if (square.marker == '1') {
         square.marker = 0;
-        $(square).css('background', '#fff');
+        $(square).css('background', '#f7f2ef');
         $(square).css('color', '#756d66');
     } else {
         square.marker = 1;
