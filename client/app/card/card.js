@@ -12,13 +12,13 @@ angular.module('buzzApp')
 function yellBingo() {
     //placeholder for basic win indicator
     var bingo = document.getElementById('card').rows[0].cells[0];
-    bingo.style.background = '#c00';
+    $(bingo).css('background', '#c00');
 }
 
 function noBingo() {
     //removes basic indicator
     var bingo = document.getElementById('card').rows[0].cells[0];
-    bingo.style.background = '#45adc5';
+    $(bingo).css('background', '#45adc5');
 }
 
 function checkForBingo() {
@@ -63,17 +63,17 @@ function checkForBingo() {
             card.rows[2].cells[2].marker &&
             //card.rows[3].cells[2].marker && // free space
             card.rows[4].cells[2].marker &&
-            card.rows[5].cells[2].marker) ||       
+            card.rows[5].cells[2].marker) ||
         (card.rows[1].cells[3].marker && // 4th column
             card.rows[2].cells[3].marker &&
             card.rows[3].cells[3].marker &&
             card.rows[4].cells[3].marker &&
-            card.rows[5].cells[3].marker) ||       
+            card.rows[5].cells[3].marker) ||
         (card.rows[1].cells[4].marker && // 5th column
             card.rows[2].cells[4].marker &&
             card.rows[3].cells[4].marker &&
             card.rows[4].cells[4].marker &&
-            card.rows[5].cells[4].marker) ||       
+            card.rows[5].cells[4].marker) ||
         (card.rows[1].cells[0].marker && /* Diagonal l-r */
             card.rows[2].cells[1].marker &&
             //card.rows[3].cells[2].marker && // free space
