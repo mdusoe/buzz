@@ -1,4 +1,4 @@
-<table id="card" class="card">
+<table id="card" class="card" ng-class="{winner: game.isWon}">
     <tr>
         <th>B</th>
         <th>I</th>
@@ -7,7 +7,7 @@
         <th>O</th>
     </tr>
     <tr ng-repeat="row in game.rows">
-        <td ng-repeat="word in row.words" onclick="select(this);">{{word}}</td>
+        <td ng-repeat="cell in row.cells" ng-class="{selected: cell.isSelected, winner: cell.isWinner}" ng-click="updateCell(cell)">{{cell.word}}</td>
     </tr>
 </table>
 
