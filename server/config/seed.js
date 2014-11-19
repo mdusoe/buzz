@@ -100,6 +100,56 @@ Word.find({}).remove(function() {
         word: 'Proactive'
     }, {
         word: 'Cultivate'
+    }, {
+        word: 'Core Competency'
+    }, {
+        word: 'Buy-In'
+    }, {
+        word: 'Empower'
+    }, {
+        word: 'Drinking the Kool-Aid'
+    }, {
+        word: 'Bleeding Edge'
+    }, {
+        word: 'Moving Parts'
+    }, {
+        word: 'Scalable'
+    }, {
+        word: 'Optimized'
+    }, {
+        word: 'Best Practice'
+    }, {
+        word: 'Think Outside the Box'
+    }, {
+        word: 'Ecosystem'
+    }, {
+        word: 'Leverage'
+    }, {
+        word: 'Early Adopter'
+    }, {
+        word: 'It Is What It Is'
+    }, {
+        word: 'Robust'
+    }, {
+        word: 'Out of the Box'
+    }, {
+        word: 'Going Forward'
+    }, {
+        word: 'Mindshare'
+    }, {
+        word: 'Incentivize'
+    }, {
+        word: 'Minimum Viable Product'
+    }, {
+        word: 'Transformation'
+    }, {
+        word: 'Sustainability'
+    }, {
+        word: 'Horizontal'
+    }, {
+        word: 'Benchmark'
+    }, {
+        word: 'Disrupt'
     });
     Word.syncRandom(function(err, result) {
         console.log('Randomized words' + result.updated);
