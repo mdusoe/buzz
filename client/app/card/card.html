@@ -7,11 +7,10 @@
         <th>O</th>
     </tr>
     <tr ng-repeat="row in game.rows">
-        <td ng-repeat="cell in row.cells" ng-class="{selected: cell.isSelected, winner: cell.isWinner}" ng-click="updateCell(cell)">{{cell.word}}</td>
+        <td ng-repeat="cell in row.cells" ng-class="{selected: cell.isSelected, winner: cell.isWinner}" ng-class="{'selected': $index==12}" ng-click="updateCell(cell)">{{cell.word}}</td>
     </tr>
 </table>
 
 <div class="col-md-12 text-center">
-    <button type="button" class="btn btn-xlarge btn-success">New Card</button>
-    <button type="button" class="btn btn-xlarge btn-default">Customize</button>
+    <button type="button" class="btn btn-xlarge btn-success" onclick="window.location.reload()">New Card</button>
 </div>
