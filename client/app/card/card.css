@@ -39,14 +39,14 @@
     color: #fff;
     cursor: pointer;
 }
-.card td.selected, .card td.selected:hover, .card td.free {
+.card td.selected, .card td.selected:hover, .card tr:nth-child(4) td:nth-child(3) {
     background: #45adc5;
     color: #fff;
  }
-.card td.winner, .card td.winner:hover {
+.card td.winner, .card td.winner:hover, .card tr:nth-child(4) td.winner:nth-child(3) {
     background: #ffb6c1;
 }
-.card td.free {
+.card tr:nth-child(4) td:nth-child(3) {
     pointer-events: none;
  }
 .btn-xlarge {

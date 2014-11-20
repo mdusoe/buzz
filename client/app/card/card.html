@@ -7,7 +7,7 @@
         <th>O</th>
     </tr>
     <tr ng-repeat="row in game.rows">
-        <td ng-repeat="cell in row.cells" ng-class="{selected: cell.isSelected, winner: cell.isWinner, free: ($index==12)}" ng-click="updateCell(cell)">{{cell.word}}</td>
+        <td ng-repeat="cell in row.cells" ng-class="{selected: cell.isSelected, winner: cell.isWinner}" ng-class="{'selected': $index==12}" ng-click="updateCell(cell)">{{cell.word}}</td>
     </tr>
 </table>
 
