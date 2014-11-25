@@ -5,7 +5,7 @@
 module.exports = {
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/buzz-dev'
+    uri: 'mongodb://mdusoe-mongo.cloudapp.net:27017/buzz-dev'
   },
 
   seedDB: true
