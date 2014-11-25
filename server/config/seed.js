@@ -152,6 +152,6 @@ Word.find({}).remove(function() {
         word: 'Disrupt'
     });
     Word.syncRandom(function(err, result) {
-        console.log('Randomized words' + result.updated);
+        console.log('Randomized words ' + result.updated);
     });
 });

@@ -13,6 +13,8 @@ var _ = require('lodash');
 var Game = require('./game.model');
 var Word = require('../word/word.model');
 
+var mongoose = require('mongoose');
+
 
 // Creates a new word in the DB.
 exports.create = function(req, res) {
@@ -21,7 +23,7 @@ exports.create = function(req, res) {
         rows: [],
         isWon: false
     };
-
+    console.log('About to read data from ' + mongoose.connection.host);
     Word.findRandom().limit(25).exec(function(err, words) {
         console.log('Found words: ' + words.length);
         for (var rowCount = 0; rowCount < 5; rowCount++) {
