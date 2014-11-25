@@ -152,8 +152,11 @@ Word.find({}).remove(function() {
         word: 'Benchmark'
     }, {
         word: 'Disrupt'
-    });
-    Word.syncRandom(function(err, result) {
-        console.log('Randomized words ' + result.updated);
-    });
+    }, 
+    function(err, result){
+         Word.syncRandom(function(err, result) {
+             console.log('Randomized words ' + result.updated);
+        });
+    }
+   );
 });
