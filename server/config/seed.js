@@ -9,6 +9,7 @@ var Thing = require('../api/thing/thing.model');
 var User = require('../api/user/user.model');
 var Word = require('../api/word/word.model');
 
+var mongoose = require('mongoose');
 
 Thing.find({}).remove(function() {
     Thing.create({
@@ -50,6 +51,7 @@ User.find({}).remove(function() {
 });
 
 Word.find({}).remove(function() {
+     console.log('About to write data to ' + mongoose.connection.host);
     Word.create({
         word: 'Efficiently'
     }, {
