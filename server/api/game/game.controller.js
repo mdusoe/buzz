@@ -25,6 +25,10 @@ exports.create = function(req, res) {
     };
     console.log('About to read data from ' + mongoose.connection.host);
     Word.findRandom().limit(25).exec(function(err, words) {
+        if(err){
+           handleError(err);
+           return;
+        }
         console.log('Found words: ' + words.length);
         for (var rowCount = 0; rowCount < 5; rowCount++) {
             var newRow = {
