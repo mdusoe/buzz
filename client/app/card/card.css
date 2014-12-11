@@ -3,7 +3,6 @@
     border: 7px solid #45adc5;
     border-spacing: 3px;
     border-collapse: separate;
-    border-top: none;
     background: #45adc5;
 }
 .card th {
@@ -14,11 +13,9 @@
     font-family: 'Chango', cursive;
     line-height: 1.5em;
 }
-.card th, .card td {
+.card th,
+.card td {
     width: 120px
-}
-.winner th {
-    background: #ffb6c1;
 }
 .card td {
     display: table-cell;
@@ -39,16 +36,22 @@
     color: #fff;
     cursor: pointer;
 }
-.card td.selected, .card td.selected:hover, .card tr:nth-child(4) td:nth-child(3) {
+td.selected,
+.card tr:nth-child(4) td:nth-child(3) {
     background: #45adc5;
     color: #fff;
- }
-.card td.winner, .card td.winner:hover, .card tr:nth-child(4) td.winner:nth-child(3) {
+}
+.winner th,
+.card td.winner,
+.card tr:nth-child(4) td.winner:nth-child(3) {
     background: #ffb6c1;
+}
+.card td.winner:hover {
+    background: #f2b179;
 }
 .card tr:nth-child(4) td:nth-child(3) {
     pointer-events: none;
- }
+}
 .btn-xlarge {
     padding: 18px 28px;
     border-radius: 8px;
@@ -71,17 +74,5 @@
     }
     .card th, .card td {
         width: 18%;
-    }
-}
-@media only screen and (max-width: 374px) {
-    .card th, .card td {
-        line-height: 1.15em;
-    }
-    .card th {
-        font-size: 2.5em;
-    }
-    .card td {
-        height: 90px;
-        font-size: 0.9em;
     }
 }
