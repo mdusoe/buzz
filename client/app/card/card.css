@@ -31,7 +31,8 @@
     font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
     line-height: 1.1em;
 }
-.card td:hover {
+.card td:hover,
+.card td:focus {
     background: #f2b179;
     color: #fff;
     cursor: pointer;

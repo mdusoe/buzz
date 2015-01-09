@@ -1,16 +1,16 @@
-<table id="card" class="card" ng-class="{winner: game.isWon}">
+<table id="card" class="card" ng-class="{winner: game.isWon}" role="presentation">
     <tr>
-        <th>B</th>
-        <th>I</th>
-        <th>N</th>
-        <th>G</th>
-        <th>O</th>
+        <th scope="col">B</th>
+        <th scope="col">I</th>
+        <th scope="col">N</th>
+        <th scope="col">G</th>
+        <th scope="col">O</th>
     </tr>
     <tr ng-repeat="row in game.rows">
-        <td ng-repeat="cell in row.cells" ng-class="{selected: cell.isSelected || $index==12, winner: cell.isWinner}" ng-click="updateCell(cell)">{{cell.word}}</td>
+        <td ng-repeat="cell in row.cells" ng-class="{selected: cell.isSelected || $index==12, winner: cell.isWinner}" ng-click="updateCell(cell)" tabindex="{{$index + 1}}">{{cell.word}}</td>
     </tr>
 </table>
 
-<div class="col-md-12 text-center">
+<div class="col-md-12 text-center" role="row">
     <button type="button" class="btn btn-xlarge btn-success" onclick="window.location.reload()">New Card</button>
 </div>
